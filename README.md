@@ -1,5 +1,5 @@
 # fashion-ann-pipeline
-
+hotfix
 End-to-end reproducible ML pipeline: a fully-connected ANN on Fashion-MNIST,
 versioned with Git (code) and DVC + Google Drive (data, models, metrics).
 
