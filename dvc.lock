@@ -50,15 +50,15 @@ stages:
     params:
       params.yaml:
         train.batch_size: 64
-        train.dense_units: 128
+        train.dense_units: 256
         train.dropout_rate: 0.2
         train.epochs: 10
         train.learning_rate: 0.001
     outs:
     - path: models
       hash: md5
-      md5: 4079957cdeb8cf88b3321caddf73da36.dir
-      size: 1246086
+      md5: 1667314361c9f9229d00e90b321b0aff.dir
+      size: 2467712
       nfiles: 2
   evaluate:
     cmd: python src/evaluate.py
@@ -69,8 +69,8 @@ stages:
       size: 6509632
     - path: models/model.h5
       hash: md5
-      md5: 90c81c162ab8a99c6c5650197cacf057
-      size: 1245272
+      md5: 207c879d203f83fae1c32bbf37b3e30d
+      size: 2466904
     - path: src/evaluate.py
       hash: md5
       md5: cdccd83c1a87c78428a0e5c9c08e7d15
@@ -78,9 +78,9 @@ stages:
     outs:
     - path: metrics.json
       hash: md5
-      md5: 9a3d6d59b33d02d6de4bd89526728aa8
+      md5: 4d5074d2c632146d92b677c0a642542c
       size: 55
     - path: reports/confusion_matrix.png
       hash: md5
-      md5: 22577974752e71ff26eb5062fb7caf7a
-      size: 67737
+      md5: 9458efb05a720a91a20257331368c5ef
+      size: 68514
