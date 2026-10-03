@@ -1,1 +1,19 @@
 /confusion_matrix.png
+
+# Python / env
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# DVC-managed payloads (DVC adds its own entries too)
+.dvc/cache
+.dvc/tmp
+*.h5
+
+# Credentials / secrets
+client_secret*.json
+credentials*.json
+service_account*.json
+.env
+/modelsgit status
